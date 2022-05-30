@@ -1,6 +1,7 @@
 package homeworks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Homework20 {
 
@@ -99,4 +100,49 @@ public class Homework20 {
         }
         return newArray;
     }
+
+    public static void main(String[] args) {
+
+        System.out.println(hasLowerCase("AHMAD"));
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(0);
+        arr.add(3);
+        arr.add(0);
+        arr.add(0);
+        arr.add(5);
+        System.out.println(noZero(arr));
+
+        System.out.println(Arrays.deepToString(numberAndSquare(new int[]{1,4})));
+
+        System.out.println(containsValue(new String[]{"Hello", "abc", "123"}, "Abc"));
+
+        System.out.println(reverseSentence("Hello World how are you"));
+
+        System.out.println(removeStringSpecialsDigits("Selenium 123#$%Cypress"));
+
+        System.out.println(Arrays.toString(removeArraySpecialsDigits(new String[]{"123Java", "#$%is", "fun"})));
+
+        ArrayList<String> strArr = new ArrayList<>();
+        strArr.add("Java");
+        strArr.add("is");
+        strArr.add("fun");
+        strArr.add("fun");
+        ArrayList<String> strArr2 = new ArrayList<>();
+        strArr2.add("fun");
+        strArr2.add("abc");
+        strArr2.add("lol");
+        System.out.println(removeAndReturnCommons(strArr, strArr2));
+
+        ArrayList<String> strArr3 = new ArrayList<>();
+        strArr.add("Jaxva");
+        strArr.add("fun");
+        strArr.add("xXxX");
+        strArr.add("fun");
+
+        System.out.println(noXInVariables(strArr3));
+
+
+    }
 }
+
